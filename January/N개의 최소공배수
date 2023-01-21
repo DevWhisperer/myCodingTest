@@ -1,0 +1,9 @@
+//https://school.programmers.co.kr/learn/courses/30/lessons/12953
+
+function solution(arr) {
+  const gcd = (a, b) => (a % b == 0 ? b : gcd(b, a % b));
+  const lcm = (a, b) => (a * b) / gcd(a, b);
+
+  let result = arr.reduce((acc, cur) => lcm(acc, cur));
+  return result;
+}
