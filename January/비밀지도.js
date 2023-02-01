@@ -27,7 +27,6 @@ function solution(n, arr1, arr2) {
     }
     Arr1[i] = tmp;
   }
-  console.log(Arr1);
   return Arr1;
 }
 solution(5, [9, 20, 28, 18, 11], [30, 1, 21, 17, 28]);
